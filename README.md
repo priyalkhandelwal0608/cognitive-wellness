@@ -16,5 +16,25 @@ This project demonstrates **end‑to‑end ML engineering, feature extraction, r
 - **EDA Notebook:** Exploratory data analysis with pandas, seaborn, matplotlib  
 - **Deployment:** Dockerized for portability  
 
+
+
 ---
 
+## 📂 Project Structure
+
+```text
+COGNITIVE WELLNESS/
+├── backend/
+│   ├── recommender/
+│   │   ├── activity_db.json    # Database of wellness activities & metadata
+│   │   └── rl_engine.py         # Reinforcement Learning logic for personalized recs
+│   ├── utils/
+│   │   └── state_classifier.py  # ML model to classify cognitive/emotional states
+│   └── app.py                  # Flask/FastAPI server connecting backend to UI
+├── notebooks/
+│   └── eda.py                  # Exploratory Data Analysis & prototyping (converted script)
+├── static/
+│   └── style.css               # Frontend styling
+├── templates/
+│   └── index.html              # Main dashboard user interface
+└── requirements.txt            # Project dependencies (NumPy, Scikit-learn, Flask, etc.)
